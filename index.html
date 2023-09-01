@@ -7,34 +7,50 @@
   </head>
   <body>
     <div>
-      <h1 id="header"></h1>
-      <input type="file" id="file" />
-    </div>
-    <div>
-      <div class="conatiner mt-5">
-        <br /><br />
-        <div class="form-group">
-          <label for="csvData">Paste JSON Object Data:</label>
-          <textarea id="josnData" class="form-control" rows="10">
-      [
-      {"name":"John", "age":30, "city":"New York"},
-      {"name":"Smith", "age":40, "city":"London"}
-      ]
-      	</textarea
-          >
+      <h1 id="header">Exportar timelog CSV al formato Excel</h1>
+      <br />
+      <div>
+        <h3>Nombre del archivo</h3>
+        <div>
+          <label for="month">Nombre del mes</label>
+          <input type="text" name="month" id="month" />
         </div>
-        <button type="button" id="exportWorksheet">Export Worksheet</button>
-        <button type="button" id="exportWorksheetPlus">
-          Export Worksheet+
-        </button>
+        <div>
+          <label for="year">Número de año</label>
+          <input type="number" name="year" id="year" />
+        </div>
+        <div>
+          <label for="firstName">Primer Nombre</label>
+          <input type="text" name="firstName" id="firstName" />
+        </div>
+        <div>
+          <label for="lastName">Primer Apellido</label>
+          <input type="text" name="lastName" id="lastName" />
+        </div>
+      </div>
+      <br />
+      <div>
+        <h3>Datos del TimeLog</h3>
+        <div>
+          <label for="analyst">Analista</label>
+          <input type="text" name="analyst" id="analyst" />
+        </div>
+        <div>
+          <label for="environment">Environment</label>
+          <input type="text" name="environment" id="environment" />
+        </div>
+        <div>
+          <label for="internal">Interno</label>
+          <input type="text" name="internal" id="internal" />
+        </div>
+      </div>
+      <br />
+      <div>
+        <h3>Subir CSV</h3>
+        <input type="file" id="file" />
       </div>
     </div>
   </body>
 </html>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<link
-  rel="stylesheet"
-  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
-/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.full.min.js"></script>
 <script src="src/script.js"></script>
