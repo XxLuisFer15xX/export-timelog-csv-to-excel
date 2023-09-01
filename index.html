@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div>
+      <h1 id="header"></h1>
+      <input type="file" id="file" />
+    </div>
+    <div>
+      <div class="conatiner mt-5">
+        <br /><br />
+        <div class="form-group">
+          <label for="csvData">Paste JSON Object Data:</label>
+          <textarea id="josnData" class="form-control" rows="10">
+      [
+      {"name":"John", "age":30, "city":"New York"},
+      {"name":"Smith", "age":40, "city":"London"}
+      ]
+      	</textarea
+          >
+        </div>
+        <button type="button" id="exportWorksheet">Export Worksheet</button>
+        <button type="button" id="exportWorksheetPlus">
+          Export Worksheet+
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.full.min.js"></script>
+<script src="src/script.js"></script>
