@@ -107,9 +107,8 @@ const readFile = (evt) => {
     }
 
     let fileName = `${formValues.month}_${formValues.year}_${formValues.firstName}_${formValues.lastName}`;
-    console.log(fileName);
     let jsonDataObject = eval(timelog);
-    exportWorksheet(jsonDataObject, "Agosto_2023_Luis_Solano");
+    exportWorksheet(jsonDataObject, fileName);
   };
   reader.readAsBinaryString(file);
 };
